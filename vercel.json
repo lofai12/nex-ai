@@ -1,4 +1,10 @@
 {
   "buildCommand": "cd chatbot-frontend && npm install && npm run build",
-  "outputDirectory": "chatbot-frontend/dist"
+  "outputDirectory": "chatbot-frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/chat",
+      "destination": "/api/index.py"
+    }
+  ]
 }
