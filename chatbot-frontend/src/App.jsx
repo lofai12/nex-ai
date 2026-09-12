@@ -502,7 +502,7 @@ function App() {
 
         try {
             const response = await fetch(
-                'http://localhost:8000/chat',
+                '/api/chat',
                 {
                     method: 'POST',
                     headers: {
