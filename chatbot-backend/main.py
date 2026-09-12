@@ -1116,6 +1116,7 @@ async def health_check():
 # CHAT
 # ============================================================
 
+@app.post("/api/chat", tags=["Chat"])
 @app.post("/chat", tags=["Chat"])
 async def chat(chat_input: ChatInput):
 
